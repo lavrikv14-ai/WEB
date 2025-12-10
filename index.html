@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Галерея рецептів кондитерських виробів</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Задоволення від кожного шматочка</h1>
+        <p class="subtitle">Кулінарна книга улюблених рецептів</p>
+    </header>
+
+    <main>
+        <div class="filters-wrapper">
+            <input type="radio" id="type-all" name="type" checked>
+            <input type="radio" id="type-cake" name="type">
+            <input type="radio" id="type-cupcake" name="type">
+            <input type="radio" id="type-cookie" name="type">
+            <input type="radio" id="type-pie" name="type">
+
+            <aside class="filters">
+                <div class="filter-group">
+                    <h3>Калорії у порції</h3>
+                    <div class="calorie-slider">
+                        <label for="calorie-range">Від 0 до 800 ккал</label>
+                        <input type="range" id="calorie-range" min="0" max="800" value="400" step="50">
+                    </div>
+                </div>
+
+                <div class="filter-group">
+                    <h3>Тип виробу</h3>
+                    <div class="type-filters">
+                        <label for="type-all">Всі</label>
+                        <label for="type-cake">Торти</label>
+                        <label for="type-cupcake">Кекси</label>
+                        <label for="type-cookie">Печиво</label>
+                        <label for="type-pie">Пироги</label>
+                    </div>
+                </div>
+            </aside>
+
+            <section class="gallery">
+                <article class="recipe-card cake cal-high" data-calories="620">
+                    <div class="card-image">
+                        <img src="карамалтний торт.jpg" alt="Карамельний торт">
+                    </div>
+                    <div class="card-content">
+                        <h2>Карамельний торт</h2>
+                        <div class="card-divider"></div>
+                        <p class="calories">620 ккал</p>
+                        <p class="description">М’який торт із легкою карамельною ноткою.</p>
+                    </div>
+                </article>
+
+                <article class="recipe-card cupcake cal-medium" data-calories="380">
+                    <div class="card-image">
+                        <img src="Ягідні мафіни.jpg" alt="Ягідні мафіни">
+                    </div>
+                    <div class="card-content">
+                        <h2>Ягідні мафіни</h2>
+                        <div class="card-divider"></div>
+                        <p class="calories">380 ккал</p>
+                        <p class="description">Ніжні мафіни з соковитими ягодами.</p>
+                    </div>
+                </article>
+
+                <article class="recipe-card cookie cal-low" data-calories="180">
+                    <div class="card-image">
+                        <img src="мигдальне печиво.jpg" alt="Мигдальне печиво">
+                    </div>
+                    <div class="card-content">
+                        <h2>Мигдальне печиво</h2>
+                        <div class="card-divider"></div>
+                        <p class="calories">180 ккал</p>
+                        <p class="description">Ароматне печиво з хрустким смаком.</p>
+                    </div>
+                </article>
+
+                <article class="recipe-card pie cal-medium" data-calories="420">
+                    <div class="card-image">
+                        <img src="грушевий пиріг.webp" alt="Грушевий пиріг">
+                    </div>
+                    <div class="card-content">
+                        <h2>Грушевий пиріг</h2>
+                        <div class="card-divider"></div>
+                        <p class="calories">420 ккал</p>
+                        <p class="description">Домашній пиріг з м’якою грушевою начинкою.</p>
+                    </div>
+                </article>
+
+                <article class="recipe-card cake cal-high" data-calories="580">
+                    <div class="card-image">
+                        <img src="шоколадний бісквіт.jpg" alt="Шоколадний бісквіт">
+                    </div>
+                    <div class="card-content">
+                        <h2>Шоколадний бісквіт</h2>
+                        <div class="card-divider"></div>
+                        <p class="calories">580 ккал</p>
+                        <p class="description">Легкий бісквіт із насиченим смаком какао.</p>
+                    </div>
+                </article>
+
+                <article class="recipe-card cupcake cal-medium" data-calories="340">
+                    <div class="card-image">
+                        <img src="апельсинові мафіни.webp" alt="Апельсинові мафіни">
+                    </div>
+                    <div class="card-content">
+                        <h2>Апельсинові мафіни</h2>
+                        <div class="card-divider"></div>
+                        <p class="calories">340 ккал</p>
+                        <p class="description">Пухкі мафіни з цитрусовим ароматом.</p>
+                    </div>
+                </article>
+
+                <article class="recipe-card cookie cal-low" data-calories="220">
+                    <div class="card-image">
+                        <img src="кокосове печиво.jpg" alt="Кокосове печиво">
+                    </div>
+                    <div class="card-content">
+                        <h2>Кокосове печиво</h2>
+                        <div class="card-divider"></div>
+                        <p class="calories">220 ккал</p>
+                        <p class="description">Печиво з ніжним кокосовим смаком.</p>
+                    </div>
+                </article>
+
+                <article class="recipe-card pie cal-high" data-calories="550">
+                    <div class="card-image">
+                        <img src="сирний десерт.jpg" alt="Сирний десерт">
+                    </div>
+                    <div class="card-content">
+                        <h2>Сирний десерт</h2>
+                        <div class="card-divider"></div>
+                        <p class="calories">550 ккал</p>
+                        <p class="description">Ніжний десерт на основі вершкового сиру.</p>
+                    </div>
+                </article>
+
+                <article class="recipe-card cake cal-medium" data-calories="460">
+                    <div class="card-image">
+                        <img src="горіховий торт.webp" alt="Горіховий торт">
+                    </div>
+                    <div class="card-content">
+                        <h2>Горіховий торт</h2>
+                        <div class="card-divider"></div>
+                        <p class="calories">460 ккал</p>
+                        <p class="description">Ароматний торт із подрібненими горіхами.</p>
+                    </div>
+                </article>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 Smakota.</p>
+            <p>Контактні дані: st9237336@stud.duikt.edu.ua</p>
+        </div>
+    </footer>
+</body>
+</html>
